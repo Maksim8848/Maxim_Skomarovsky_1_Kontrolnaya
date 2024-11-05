@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html <head>
+<meta charset="UTF-8">
+
+<head>
+    <title>Задача с формой</title>
+</head>
+
+<body>
+    <p>Определить, выполняется ли условие 1)A < B < C или 2)A < B > C и какое именно</p>
+    <form action="https://www.bing.com/search?" id="user" name="user" target="_blank">
+        <ul type="square">
+            <li>Для поисковика:<input name="q" value="поиск"></li>
+            <li>Формулировка задачи 
+                <br><textarea cols="50" rows="4" name="formulation">Определить, выполняется ли условие 1)A < B < C или 2)A < B > C? Если выполняется - отправить все на сервер</textarea></li>
+            <li>a: <input id="a" name="a"  type="number" value="10"></li>
+            <li>b: <input id="b"  name="b" type="number" value="20"></li>
+            <li>c: <input id="c"  name="c" type="number" value="19"></li>
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен"></li>
+            <li><input id="verify" type="button" value="Проверить условие"></li>
+            <li><input id="send" type="button" value="Отправить данные"></li>
+        </ul>
+    </form>
+</body>
+<script src="../js/Задачасформой.js"></script>
+
+</html>
