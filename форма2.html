@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Формы-2. Отправляем данные на сервер</title>
+    <style>
+        body {
+            background: url('./images/светляк.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-family: Verdana;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-weight: 1000;
+            color:rgb(107, 7, 201);
+        }
+
+        .input {
+            background: url('./images/eunia.webp');
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+            color:aliceblue
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <h4 align="center">Здесь вы можете дополнить информацию про какую-либо страну(которая представлена на сайте либо
+        другая) либо сообщить об ошибках сайта&#8595;</h4>
+    <form action="https://www.bing.com/search?" id="user" name="user" target="_blank">
+        <p>Для поисковика:<input type="hidden" name="q" value="поиск"></p>
+        <p>Ваша Фамилия: <input type="text" name="surname" size=18 value="Петров"></p>
+        <p>Ваше Имя: <input type="text" name="name" size=18 value="Дмитрий"></p>
+        <p>Ваше Отчество: <input type="text" name="fathername" size=18 value="Константинович"></p>
+        <p>Что вы хотите?
+            <input type="Radio" name="place" value="edit">Указать на ошибки в статьях или в работе сайта
+            <input type="Radio" name="place" value="add">Дополнить инфрамацию по статьям, представленным на сайте
+            <input type="Radio" name="place" value="new">Предложить статью о новой стране для публикации
+        </p>
+        <p>Место проживания:
+            <input type="text" name="place" size="48" value=""
+                placeholder="Польша,г.Гданьск,ул.Krzywa,д.11(,к.,с.,кв.)">
+        </p>
+        <p>Мобильный телефон: <input type="tel" name="tel" size=18 value="+7(888)8888888"></p>
+        <p>Адрес эл.почты: <input type="email" name="email" size=20 maxlength=36 value="eurosojuz@mail.ru"></p>
+        <p>Я прочитал и ознакомился со следующими документами:
+            <input type="Checkbox" name="polit" value="10" checked>Политика конфиденциальности
+            <input type="Checkbox" name="awtor" value="20" checked>Соглашение об авторском праве <br>
+            <input type="Checkbox" name="person" value="30" checked>Согласиe на обработку персональных данных
+        </p>
+        <p>Язык статьи: <select name="mowa">
+                <OPTION value="en">english</OPTION>
+                <OPTION value="de">deutsch</OPTION>
+                <OPTION value="fr">français</OPTION>
+                <OPTION value="pl">polski</OPTION>
+                <OPTION value="sb">српски</OPTION>
+                <OPTION value="it">italiano</OPTION>
+                <OPTION value="ru">русский</OPTION>
+                <OPTION value="ua">українська</OPTION>
+                <OPTION value="cz">český</OPTION>
+                <OPTION value="other">другой</OPTION>
+            </select></p>
+        <p> Ваша статья:
+            <br>
+            <TEXTAREA cols=66 rows=8 name="textarea" placeholder="Ввести текст"></TEXTAREA>
+        </p>
+        <p>Дата: <input type="date" name="date" value='2024-11-06'></p>
+        <p>Время(UTC+3): <input type="time" name="czas" size=18 value="12:40"></p>
+        <p>Пароль: <input type="password" name="password" size=8 maxlength=16 value="12345678"></p>
+        <p><input class="input" type="submit" name="submit" value="Отправить статью"></p>
+        <p><input type="reset" name="reset" value="Сбросить всё"></p>
+    </form>
