@@ -4,11 +4,11 @@ function nieravienstwa() {
   let B = parseFloat(elb.innerText);
   let C = parseFloat(elc.innerText);
   if (A < B && B < C) {
-    result = " Первое выполняется";
+    result = "Первое выполняется";
   } else if (A < B && B > C) {
-    result = " Второе выполняется";
+    result = "Второе выполняется";
   } else {
-    result = " Никакое не выполняется";
+    result = "Никакое не выполняется";
   }
   document.getElementById('result').innerText = result;
 }
