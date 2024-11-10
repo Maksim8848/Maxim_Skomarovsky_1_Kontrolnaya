@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Формы-2. Отправляем данные на сервер</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
         body {
             background: url('./images/светляк.png');
@@ -15,20 +16,61 @@
 
         h4 {
             font-weight: 1000;
-            color:rgb(107, 7, 201);
-        }
-
-        .input {
-            background: url('./images/eunia.webp');
-            background-position: 100% 100%;
-            background-repeat: no-repeat;
-            color:aliceblue
+            color: rgb(107, 7, 201);
+            margin-top: 32px;
         }
     </style>
 </head>
 <html>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li id="r">
+                    <div class='main'><a href="ind.html" >Начальная страница</a></div>
+                </li>
+
+                <li id="r">
+                    <div class='belg'><a href="бельгия.html">Бельгия</a> </div>
+                </li>
+
+                <li id="r">
+                    <div class='pl'><a href="польша.html">Польша</a></div>
+                </li>
+                <li id="r">
+                    <div class='frg'><a href="ФРГ.html">ФРГ</a></div>
+                </li>
+                <li id="r">
+                    <div class='fra'><a href="франция.html" >Франция</a></div>
+                </li>
+                <li id="r">
+                    <div class='sp'><a href="испания.html" >Испания</a></div>
+                </li>
+                <li id="r">
+                    <div class='it'><a href="италия.html">Италия</a></div>
+                </li>
+                <li id="r">
+                    <div class='forma1'><a href="форма1.html">Регистрация</a></div>
+                </li>
+                <li id="r">
+                    <div class='forma2'><a href="форма2.html" class="active">Править</a></div>
+                </li>
+                <li id="r">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn" >Дополнительно</button>
+                        <div id="dropdown" class="dropdown-content">
+                            <a href="Задача1012.html">Задача №1012</a>
+                            <a href="Задачасформой.html">Задача №1012 с отправкой формы</a>
+                            <a href="../Паспорт/Паспорт.html">Паспорт</a>
+                            <a href="../Паспорт/DOM_JS.png" target="_blank">Скриншот DOM</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
     <h4 align="center">Здесь вы можете дополнить информацию про какую-либо страну(которая представлена на сайте либо
         другая) либо сообщить об ошибках сайта&#8595;</h4>
     <form action="https://www.bing.com/search?" id="user" name="user" target="_blank">
@@ -72,5 +114,9 @@
         <p>Время(UTC+3): <input type="time" name="czas" size=18 value="12:40"></p>
         <p>Пароль: <input type="password" name="password" size=8 maxlength=16 value="12345678"></p>
         <p><input class="input" type="submit" name="submit" value="Отправить статью"></p>
-        <p><input type="reset" name="reset" value="Сбросить всё"></p>
+        <p><input class="anput" type="reset" name="reset" value="Сбросить всё"></p>
     </form>
+</body>
+<script src="./js/меню.js"></script>
+
+</html>
