@@ -19,8 +19,7 @@ function change_all() {
             document.getElementsByTagName("div")[6].innerText = "M";
             document.getElementsByTagName("div")[8].innerText = "г.Москва/USSR";
             document.getElementsByTagName("div")[1].style.marginTop= "150px";
-            document.getElementsByTagName("div")[1].style.marginRight= "30px"
-        ;
+            document.getElementsByTagName("div")[1].style.marginRight= "30px";
             
         }
 
